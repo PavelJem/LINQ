@@ -1,0 +1,30 @@
+1. LINQ - Language Integrated Query is uniform query syntax in C# and VB.NET to retrieve data from different sources and formats.
+2. mida tähendab märk: =>  The lambda expression is a shorter way of representing anonymous method using some special syntax. parameters => body expression
+3. Where The Where operator (Linq extension method) filters the collection based on a given criteria expression and returns a new collection. The criteria can be specified as lambda expression or Func delegate type.
+4. OfType The OfType operator filters the collection based on the ability to cast an element in a collection to a specified type.
+5. ThenBy is  used for sorting on multiple fields
+6. GroupBy creates a group of elements based on the given key.  ToLookUp  is the same as GroupBy; the only difference is the execution of GroupBy is deferred whereas ToLookup execution is immediate.
+7. Join operates on two collections, inner collection & outer collection. It returns a new collection that contains elements from both the collections which satisfies specified expression. 
+8. GroupJoin erforms the same task as Join operator except that GroupJoin returns a result in group based on specified group key.
+9. Select always returns an IEnumerable collection which contains elements based on a transformation function
+10. All checks if all the elements in a sequence satisfies the specified condition, Any checks if any of the elements in a sequence satisfies the specified condition
+11. Contains checks whether a specified element exists in the collection or not and returns a boolean.
+12. Aggregate performs a custom aggregation operation on the values in the collection.
+13. Avarage calculates the average of the numeric items in the collection.
+14. Count counts the elements in a collection.
+15. Max finds the largest value in the collection.
+16. Sum calculates sum of the values in the collection.
+17. ElementAt returns the element at a specified index in a collection, ElementAtOrdefault returns the element at a specified index in a collection or a default value if the index is out of range.
+18. First returns the first element of a collection, or the first element that satisfies a condition, FirstOrDefault returns the first element of a collection, or the first element that satisfies a condition. Returns a default value if index is out of range.
+19. Last returns the last element of a collection, or the last element that satisfies a condition, LastOrDefault returns the last element of a collection, or the last element that satisfies a condition. Returns a default value if no such element exists.
+20. Single returns the only element of a collection, or the only element that satisfies a condition, SingleOrDefault returns the only element of a collection, or the only element that satisfies a condition. Returns a default value if no such element exists or the collection does not contain exactly one element.
+21. SequenceEquel checks whether the number of elements, value of each element and order of elements in two collections are equal or not.
+22. Concat checks whether the number of elements, value of each element and order of elements in two collections are equal or not.
+23. DefaultEmpty returns a new collection with the default value if the given collection on which DefaultIfEmpty() is invoked is empty
+24. Empty returns an empty collection, Range Generates collection of IEnumerable<T> type with specified number of elements with sequential values, starting from first element, Repeat generates a collection of IEnumerable<T> type with specified number of elements and each element contains same specified value.
+25. Distinct returns distinct values from a collection.
+26. Except returns the difference between two sequences, which means the elements of one collection that do not appear in the second collection.
+27. Intersect returns the intersection of two sequences, which means elements that appear in both the collections.
+28. Union returns unique elements from two sequences, which means unique elements that appear in either of the two sequences.
+29. Skip skips elements up to a specified position starting from the first element in a sequence, SkipWhile skips elements based on a condition until an element does not satisfy the condition. If the first element itself doesn't satisfy the condition, it then skips 0 elements and returns all the elements in the sequence.
+30. Take returns the specified number of elements starting from the first element., TakeWhile returns elements from the given collection until the specified condition is true. If the first element itself doesn't satisfy the condition then returns an empty collection.
