@@ -1,0 +1,57 @@
+1.Dependency injection is a design pattern used to implement Inversion of Control. 
+It allows the creation of dependent objects outside of a class and provides those objects to a class through different ways.
+
+2.Kuhu classi kirjutad dependency Injectioni koodi ja mis meetodi alla?
+-
+3.Dependency Injectioni koodinäide tuua välja.
+using System;  
+using System.Collections.Generic;  
+using System.Linq;  
+using System.Text;  
+using System.Threading.Tasks;  
+  
+namespace propertyinjuction  
+{  
+    public interface text  
+    {
+        void print();
+    }
+    class format : text
+    {
+        public void print()
+        {
+            Console.WriteLine(" here is text format");
+        }      
+    }
+    // constructor injection
+    public class constructorinjection
+    {  
+        private text _text;
+        public constructorinjection(text t1)
+        {
+            this._text = t1;          
+        }
+        public void print()
+        {  
+            _text.print();
+        }
+    }
+    class constructor
+    {  
+        static void Main(string[] args)
+        {  
+            constructorinjection cs = new constructorinjection(new format());
+            cs.print();
+            Console.ReadKey();          
+        }
+    }
+}
+4.Mis tähendab AddSingelton? 
+AddSingleton() method creates a Singleton service. 
+A Singleton service is created when it is first requested. 
+This same instance is then used by all the subsequent requests. 
+So in general, a Singleton service is created only one time per application and that single instance is used throughout the application life time.
+5.Mis tähendab AddTransient?
+AddTransient() method creates a Transient service. A new instance of a Transient service is created each time it is requested.
+6.Mis tähendab AddScoped?
+AddScoped() method creates a Scoped service. A new instance of a Scoped service is created once per request within the scope.
