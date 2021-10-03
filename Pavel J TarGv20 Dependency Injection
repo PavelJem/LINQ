@@ -2,7 +2,8 @@
 It allows the creation of dependent objects outside of a class and provides those objects to a class through different ways.
 
 2.Kuhu classi kirjutad dependency Injectioni koodi ja mis meetodi alla?
--
+The dependency injection code should be written in  a injectior class. Under the constructor, through a property, or through a method.
+
 3.Dependency Injectioni koodinäide tuua välja.
 using System;  
 using System.Collections.Generic;  
