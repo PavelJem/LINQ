@@ -1,12 +1,12 @@
 1. Mida teeb ConfigureServices meetod?
-The ConfigureServices method is a place where you can register your dependent classes with the built-in IoC container. 
+The ConfigureServices method is a place where programmer can register his dependent classes with the built-in IoC container. 
 After registering dependent class, it can be used anywhere in the application. 
-You just need to include it in the parameter of the constructor of a class where you want to use it. 
+Programmer just need to include it in the parameter of the constructor of a class where he wants to use it. 
 The IoC container will inject it automatically.
 ConfigureServices method includes IServiceCollection parameter to register services to the IoC container. Learn more about it in the next chapter.
 
 2. Mida teeb Configure meetod?
-The Configure method is a place where you can configure application request pipeline for your application using 
+The Configure method is a place where programmer can configure application request pipeline for his application using 
 IApplicationBuilder instance that is provided by the built-in IoC container.
 ConfigureServices method includes IServiceCollection parameter to register services to the IoC container. Learn more about it in the next chapter.
 
@@ -29,7 +29,6 @@ public class Program
 }
 
 4. Kuidas teenuseid lahendatakse Configure meetodis?
-
 The Configure method includes three parameters IApplicationBuilder, IHostingEnvironment, and ILoggerFactory by default. 
 These services are framework services injected by built-in IoC container.
 At run time, the ConfigureServices method is called before the Configure method. 
